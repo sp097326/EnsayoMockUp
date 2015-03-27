@@ -1,34 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="horizontal"
+              android:orientation="vertical"
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
-        >
+              android:weightSum="1">
     <HorizontalScrollView
             android:layout_width="match_parent"
-            android:layout_height="72dp"
-            android:id="@+id/hsv_retratos" android:visibility="visible" android:layout_gravity="center_vertical">
-        <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/Foto1" android:src="@drawable/ic_launcher"/>
+            android:layout_height="150px"
+            android:id="@+id/hsv_retratos"
+            android:visibility="visible"
+            android:layout_gravity="center_vertical" android:layout_weight="0.17">
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="fill_parent">
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/LazaroCardenas"
+                    android:src="@drawable/LazaroCardenasdelRio"/>
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/josepavon" android:src="@drawable/JoseIgnacioPavon"/>
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/joseceballos" android:src="@drawable/JuanBautistaCeballos"/>
+        </LinearLayout>
     </HorizontalScrollView>
-    <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/Foto2" android:src="@drawable/ic_launcher"/>
+
     <HorizontalScrollView
-            android:layout_width="872dp"
-            android:layout_height="144dp"
-            android:id="@+id/hsv_nombres" android:visibility="visible">
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:id="@+id/hsv_nombres"
+            android:visibility="visible"
+            android:layout_gravity="center_vertical" android:layout_weight="0.22">
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="fill_parent">
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Photo2"
+                    android:src="@drawable/beto"/>
+        </LinearLayout>
     </HorizontalScrollView>
     <HorizontalScrollView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/hsv_hechos" android:visibility="visible"/>
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:id="@+id/hsv_hechos"
+            android:visibility="visible"
+            android:layout_weight="0.19">
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="fill_parent">
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Photo3"
+                    android:src="@drawable/beto"/>
+        </LinearLayout>
+    </HorizontalScrollView>
     <HorizontalScrollView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/hsv_targetAreas" android:visibility="visible"/>
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:id="@+id/hsv_targetAreas" android:visibility="visible">
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="fill_parent">
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/BlankUsr_1"
+                    android:src="@drawable/blankuser"
+                    android:adjustViewBounds="false"/>
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/BlankUsr_2"
+                    android:src="@drawable/blankuser"
+                    android:adjustViewBounds="false"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
 </LinearLayout>
 
