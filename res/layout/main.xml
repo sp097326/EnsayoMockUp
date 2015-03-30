@@ -17,15 +17,17 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:id="@+id/LazaroCardenas"
-                    android:src="@drawable/LazaroCardenasdelRio"/>
+                    android:src="@drawable/lazarocardenasdelrio"/>
             <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/josepavon" android:src="@drawable/JoseIgnacioPavon"/>
+                    android:id="@+id/josepavon"
+                    android:src="@drawable/joseignaciopavon"/>
             <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/joseceballos" android:src="@drawable/JuanBautistaCeballos"/>
+                    android:id="@+id/joseceballos"
+                    android:src="@drawable/juanbautistaceballos" android:contentDescription="José Ceballos"/>
         </LinearLayout>
     </HorizontalScrollView>
 
